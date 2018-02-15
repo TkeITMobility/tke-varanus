@@ -1,0 +1,25 @@
+{
+  "name": "tke-varanus",
+  "version": "1.0.0",
+  "description": "Common Varanus initialization code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TkeITMobility/tke-varanus.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TkeITMobility/tke-varanus/issues"
+  },
+  "homepage": "https://github.com/TkeITMobility/tke-varanus#readme",
+  "dependencies": {
+    "env-var": "^3.1.0",
+    "tke-logger": "git+https://github.com/TkeITMobility/tke-cloud-logger.git#v0.5.0",
+    "varanus": "^2.0.1",
+    "varanus-elasticsearch": "^2.0.0"
+  }
+}
