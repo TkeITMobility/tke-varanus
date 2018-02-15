@@ -11,13 +11,12 @@ const varanusInstance = varanus({
   log: log,
   flush: getFlushFunction(),
   flushInterval: env.get('PERFMON_FLUSH', '15000').asIntPositive(),
-  maxRecords: env.get('PERFORMON_MAX_RECORDS', '2000').asIntPositive,
-  level: env.get('PERFMON_LOG_LEVEL', 'info').asString,
+  maxRecords: env.get('PERFORMON_MAX_RECORDS', '2000').asIntPositive(),
+  level: env.get('PERFMON_LOG_LEVEL', 'info').asString(),
   enabled: env.get('PERFMON_ENABLED').asBool()
 });
 
 exports.newMonitor = function (name) {
-  console.log('New monitor', Object.keys(varanusInstance));
   return varanusInstance.newMonitor(name);
 };
 

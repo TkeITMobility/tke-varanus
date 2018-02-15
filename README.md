@@ -18,9 +18,6 @@ TKE-specific configuration for [Varanus](https://www.npmjs.com/package/varanus) 
 
 ## Usage
 
-### Initialization
-Somewhere in your app startup, call `require('tke-varanus').init('yourAppName')`. This will initialize Varanus for your app using the provided env vars. 
-
 ### Monitoring Function Calls
 In each file that has functions you'd like to monitor, do something like this:
 
