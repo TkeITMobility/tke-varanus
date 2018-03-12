@@ -26,7 +26,7 @@ function getFlushFunction() {
   if (esHost) {
     return getElasticsearchFlush();
   } else {
-    log.warn('No ELASTICSEARCH_HOST variable set, not writing data to ' +
+    log.warn('No PERFMON_ES_HOST variable set, not writing data to ' +
       'elasticsearch');
     return getDefaultFlush();
   }
